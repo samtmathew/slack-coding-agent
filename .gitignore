@@ -1,13 +1,17 @@
-# The original retail dataset (99 MB) from the earlier analyst version.
-/retail.db
-
 # Secrets, never commit real API keys.
 .env
 .env.*
 !.env.example
 
-# Build output, virtualenvs, caches.
+# Managed agent build output.
 .mda/
+
+# Dependencies, virtualenvs, caches.
 .venv/
+node_modules/
 __pycache__/
+
+# OS / editor junk.
 .DS_Store
+Thumbs.db
+desktop.ini

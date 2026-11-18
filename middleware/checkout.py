@@ -17,7 +17,7 @@ async def ensure_checkout(state: object, runtime: ManagedDeepAgentRuntime) -> No
     if runtime.backend is None:
         return None
     if not REPO:
-        raise RuntimeError("Set PATCH_REPO in .env to your fork, like octocat/simple-game.")
+        raise RuntimeError("Set PATCH_REPO in .env to the repository to work on, like octocat/simple-game.")
     # A public repo needs no credentials to clone. For a private one, add a
     # sandbox proxy rule that injects the `patch-github` connection for github.com.
     result = await runtime.backend.aexecute(

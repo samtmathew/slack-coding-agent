@@ -10,8 +10,7 @@ from managed_deepagents import define_deep_agent
 from middleware.checkout import ensure_checkout
 
 agent = define_deep_agent(
-    # Also your deployment's name. In a shared LangSmith workspace, make it
-    # unique, e.g. "patch-ishaan".
+    # Also the deployment's name in LangSmith. Must be unique in the workspace.
     name="patch",
     model="anthropic:claude-sonnet-5-5",
     middleware=[ensure_checkout],

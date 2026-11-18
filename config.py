@@ -1,4 +1,4 @@
-"""The one repository Patch works on: your fork, from PATCH_REPO in .env.
+"""The one repository Patch works on, from PATCH_REPO in .env.
 
 Nothing else in the project names it. The agent reads it back from the
 checkout's git remote, and `mda deploy` forwards PATCH_REPO to the deployment.
